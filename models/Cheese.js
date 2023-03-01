@@ -7,4 +7,4 @@ const Cheese = sequeliza.define('Cheese', {
   rating: Datatype.NUM
 })
 
-module.exports = Cheese
+module.exports = Cheese;
