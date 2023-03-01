@@ -6,4 +6,4 @@ const Board = sequeliza.define('Board', {
   email: Datatype.STRING
 })
 
-module.exports = User
+module.exports = Board;
