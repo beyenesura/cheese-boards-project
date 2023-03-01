@@ -6,4 +6,10 @@ Cheeses.schema.add({
     ref: 'Board'
   }
 })
-module.exports = { Board, Cheese }
+Board.schema.add({
+  Cheeses: {
+    type: Schema.Types.ObjectId,
+    ref: 'Cheeses'
+  }
+})
+module.exports = { Cheeses, Board }
