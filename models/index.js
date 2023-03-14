@@ -1,5 +1,7 @@
 const {Board} = require('./Board')
 const {Cheese} = require('./Cheese')
+// to add associations, use methods such as 
+// belongsTo(), hasMany(), or belongsToMany()
 Cheeses.schema.add({
   Board: {
     type: Schema.Types.ObjectId,
@@ -12,4 +14,5 @@ Board.schema.add({
     ref: 'Cheeses'
   }
 })
+// the Cheese model is singular
 module.exports = { Cheeses, Board }
